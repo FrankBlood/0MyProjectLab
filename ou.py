@@ -17,7 +17,7 @@ for files in filelist:
     imagefile = os.listdir('./ImageCLEF2013TrainingSet/'+files)
     for image in imagefile:
         if image.endswith('.jpg'):
-            images[filelist.index(files)].append('./'+files+'/'+image)
+            images[filelist.index(files)].append('/'+files+'/'+image)
 
 name_data = open('name_data.txt','w')
 train_data = open('train_data.txt','w')

@@ -19,7 +19,7 @@ for files in filelist:
         continue
     for image in imagefile:
         if image.endswith('.jpg'):
-            images[filelist.index(files)].append('./'+files+'/'+image)
+            images[filelist.index(files)].append('/'+files+'/'+image)
 
 name_data = open('test_name_data.txt','w')
 train_data = open('test_data.txt','w')
