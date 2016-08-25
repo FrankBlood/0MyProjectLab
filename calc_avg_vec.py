@@ -30,7 +30,7 @@ with open('user.txt', 'r') as users:
             except:
                 continue
         user_vec /= imgs_num
-        user_f = 1 + np.dot(user_vec, np.log2(user_vec)) / np.log2(vec_len)
+        user_f = 1 + np.dot(user_vec, np.log2(user_vec+1e-10)) / np.log2(vec_len)
         print user_name,
         print user_f,
         for i in user_vec:
